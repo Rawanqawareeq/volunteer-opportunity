@@ -1,7 +1,7 @@
 import UserModel from "../../../DB/model/user.model.js";
 import cloudinary from "../../utils/cloudinary.js";
 import "dotenv/config";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 export const getAll = async (req, res) => {
   const users = await UserModel.find({});
   return res.status(200).json({ message: "success", users });
