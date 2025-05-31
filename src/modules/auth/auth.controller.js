@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import bcrypt  from 'bcrypt';
+import bcrypt  from 'bcryptjs';
 import UserModel from '../../../DB/model/user.model.js';
 import jwt from 'jsonwebtoken';
 import { sendCode, sendEmail} from '../../utils/email.js';
